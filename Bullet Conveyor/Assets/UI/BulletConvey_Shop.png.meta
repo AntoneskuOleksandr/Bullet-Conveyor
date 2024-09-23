@@ -1,0 +1,461 @@
+fileFormatVersion: 2
+guid: 7194a830ab0d05147ae5c29277a34c31
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BulletConvey_Shop_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 451
+        width: 780
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18283c99c7d0e6f4da0f00566b5c2fe4
+      internalID: 1482317030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_Shop_1
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 756
+        width: 51
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060ba06e3a8da08479fe48e81b0a49a4
+      internalID: -737945343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_Shop_11
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 325
+        width: 266
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3b5c2bd2604494fac5e07ae9a3a94a
+      internalID: -80628492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_Shop_12
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 323
+        width: 264
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9c1ae77a8678243a85c555cf57ef62
+      internalID: -286778203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_Shop_13
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 325
+        width: 266
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9a4307ad34c7b4a9e0816eb47a7e85
+      internalID: -2030670269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_Shop_16
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 151
+        width: 116
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be813fd68656a2240bd6046ff0e2c3af
+      internalID: -922437152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_Shop_17
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 130
+        width: 167
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0081a7984eca9745812e5c3db7cd28c
+      internalID: -1329346246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_Shop_18
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 130
+        width: 166
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5ea3852239d6940a6c811703ff7c7e
+      internalID: 1523573821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_Shop_19
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 131
+        width: 168
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8eccaef44569d34bb64cefc76fe2294
+      internalID: -658503549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_Shop_21
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 165
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2e36ebdde5c2242a578ae7ba0a5c89
+      internalID: -1161092489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_Shop_33
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 81
+        width: 390
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb9f43554f3a374db268d5246a58baf
+      internalID: -441800507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_Shop_35
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 79
+        width: 392
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1994be735bc444d942cd19e04a6577
+      internalID: 63948008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_Shop_38
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 31
+        width: 388
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91243598481e0d94387c400b7e052900
+      internalID: 192136721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 41b164924aedb824f9c784ef97d82ad3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BulletConvey_Shop_0: 1482317030
+      BulletConvey_Shop_1: -737945343
+      BulletConvey_Shop_10: -780194130
+      BulletConvey_Shop_11: -80628492
+      BulletConvey_Shop_12: -286778203
+      BulletConvey_Shop_13: -2030670269
+      BulletConvey_Shop_14: -75129561
+      BulletConvey_Shop_15: -1064748913
+      BulletConvey_Shop_16: -922437152
+      BulletConvey_Shop_17: -1329346246
+      BulletConvey_Shop_18: 1523573821
+      BulletConvey_Shop_19: -658503549
+      BulletConvey_Shop_2: -1142251513
+      BulletConvey_Shop_20: -1062400445
+      BulletConvey_Shop_21: -1161092489
+      BulletConvey_Shop_22: 1986678560
+      BulletConvey_Shop_23: -1003420383
+      BulletConvey_Shop_24: -261226455
+      BulletConvey_Shop_25: -1449895009
+      BulletConvey_Shop_26: 1454951947
+      BulletConvey_Shop_27: 2041559472
+      BulletConvey_Shop_28: 1331493630
+      BulletConvey_Shop_29: 1177274267
+      BulletConvey_Shop_3: -1308943188
+      BulletConvey_Shop_30: 104989759
+      BulletConvey_Shop_31: 1858294679
+      BulletConvey_Shop_32: -1992628536
+      BulletConvey_Shop_33: -441800507
+      BulletConvey_Shop_34: -400846470
+      BulletConvey_Shop_35: 63948008
+      BulletConvey_Shop_36: -639649136
+      BulletConvey_Shop_37: 1418199758
+      BulletConvey_Shop_38: 192136721
+      BulletConvey_Shop_39: -817782478
+      BulletConvey_Shop_4: -1419210515
+      BulletConvey_Shop_40: -1427973296
+      BulletConvey_Shop_5: 1121954932
+      BulletConvey_Shop_6: -140737528
+      BulletConvey_Shop_7: -2137771940
+      BulletConvey_Shop_8: 869215013
+      BulletConvey_Shop_9: -39126777
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

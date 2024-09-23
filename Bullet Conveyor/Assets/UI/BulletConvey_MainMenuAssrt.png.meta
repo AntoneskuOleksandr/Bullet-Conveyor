@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: f937c1ff508eb2e49819977d201d574d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BulletConvey_MainMenuAssrt_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 771
+        width: 212
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a729838cd741fe9459327ed2b8984432
+      internalID: -1631804011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_MainMenuAssrt_3
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 815
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05680ec17561e84aaa3e61ba51e1cda
+      internalID: 930684957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_MainMenuAssrt_11
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 693
+        width: 84
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe6319b3ef47614c85b010ec7d04df4
+      internalID: 812501876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_MainMenuAssrt_13
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 551
+        width: 172
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890d2ebb7dde43b4d8ab6ab4cb6512c7
+      internalID: 925657962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_MainMenuAssrt_17
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 539
+        width: 125
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896576ed1f920d64eb5573d99b9d4fad
+      internalID: -1912810954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_MainMenuAssrt_18
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 338
+        width: 236
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7652e34c4873f244da8585c540c22bcf
+      internalID: 424197762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_MainMenuAssrt_20
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 405
+        width: 121
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f17f3eebc17e647813168b3ed2bcfc
+      internalID: 807557882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_MainMenuAssrt_26
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 183
+        width: 490
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f48c1bf29b3734fb98ad4e6fd951fe
+      internalID: -1942767513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_MainMenuAssrt_30
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 53
+        width: 287
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec981b3c0fe5e0941be92863dbbf0e5e
+      internalID: 565861454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_MainMenuAssrt_31
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 55
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3defab8269531df4ab1b8b607aab00a7
+      internalID: 1289230604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BulletConvey_MainMenuAssrt_32
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 44
+        width: 70
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6334023a2a7fa9c419088031c87a2379
+      internalID: -1019892779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2f4757aa6d89f1842b34a5a6fd62ba3f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BulletConvey_MainMenuAssrt_0: -1631804011
+      BulletConvey_MainMenuAssrt_1: 878446098
+      BulletConvey_MainMenuAssrt_10: 2087058541
+      BulletConvey_MainMenuAssrt_11: 812501876
+      BulletConvey_MainMenuAssrt_12: 991907205
+      BulletConvey_MainMenuAssrt_13: 925657962
+      BulletConvey_MainMenuAssrt_14: -412502671
+      BulletConvey_MainMenuAssrt_15: -1822451569
+      BulletConvey_MainMenuAssrt_16: 740142841
+      BulletConvey_MainMenuAssrt_17: -1912810954
+      BulletConvey_MainMenuAssrt_18: 424197762
+      BulletConvey_MainMenuAssrt_19: -872095731
+      BulletConvey_MainMenuAssrt_2: -1884761743
+      BulletConvey_MainMenuAssrt_20: 807557882
+      BulletConvey_MainMenuAssrt_21: 839845792
+      BulletConvey_MainMenuAssrt_22: 540866632
+      BulletConvey_MainMenuAssrt_23: 1870499414
+      BulletConvey_MainMenuAssrt_24: -863906389
+      BulletConvey_MainMenuAssrt_25: 62078355
+      BulletConvey_MainMenuAssrt_26: -1942767513
+      BulletConvey_MainMenuAssrt_27: 634411571
+      BulletConvey_MainMenuAssrt_28: 1041942151
+      BulletConvey_MainMenuAssrt_29: 159745295
+      BulletConvey_MainMenuAssrt_3: 930684957
+      BulletConvey_MainMenuAssrt_30: 565861454
+      BulletConvey_MainMenuAssrt_31: 1289230604
+      BulletConvey_MainMenuAssrt_32: -1019892779
+      BulletConvey_MainMenuAssrt_33: -115545653
+      BulletConvey_MainMenuAssrt_34: -1118733771
+      BulletConvey_MainMenuAssrt_35: -890829821
+      BulletConvey_MainMenuAssrt_36: -277097938
+      BulletConvey_MainMenuAssrt_37: -206663556
+      BulletConvey_MainMenuAssrt_4: 676368840
+      BulletConvey_MainMenuAssrt_5: -1686202614
+      BulletConvey_MainMenuAssrt_6: -1343461278
+      BulletConvey_MainMenuAssrt_7: 1910962275
+      BulletConvey_MainMenuAssrt_8: 1793027060
+      BulletConvey_MainMenuAssrt_9: 2094242182
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
