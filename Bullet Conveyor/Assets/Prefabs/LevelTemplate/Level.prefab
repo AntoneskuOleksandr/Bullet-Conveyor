@@ -26355,7 +26355,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7627061426807801114}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
         m_MethodName: OnOffAudio
         m_Mode: 1
@@ -28694,7 +28694,6 @@ GameObject:
   - component: {fileID: 7627061426807801112}
   - component: {fileID: 7627061426807801113}
   - component: {fileID: 7627061426807801115}
-  - component: {fileID: 7627061426807801114}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -28745,8 +28744,6 @@ MonoBehaviour:
   abilityScreen: {fileID: 7627061426475506565}
   tutorialEndScreen: {fileID: 0}
   progressBar: {fileID: 1047720522}
-  startText: {fileID: 0}
-  endText: {fileID: 0}
   continueButton: {fileID: 7627061426272760000}
   resumeButton: {fileID: 7627061426702654314}
   menuButton: {fileID: 7627061426257131856}
@@ -28810,24 +28807,6 @@ MonoBehaviour:
   onCoinsChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7627061426807801114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7627061426807801110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 345147c814331d64bb7e4e87783be6e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioOn: {fileID: 21300000, guid: 91a645c15c8d23d4bbb9bdac4b8d91ad, type: 3}
-  audioOff: {fileID: 21300000, guid: be8172b9b3f84154cb1cf3969ac0c93e, type: 3}
-  buttonAudio: {fileID: 7627061426247004207}
-  slider: {fileID: 7627061427990536630}
-  clip: {fileID: 0}
-  audio: {fileID: 0}
 --- !u!1 &7627061426813451966
 GameObject:
   m_ObjectHideFlags: 0

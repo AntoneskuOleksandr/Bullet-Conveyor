@@ -30,10 +30,6 @@ public class UIManager : MonoBehaviour
     [Header("Progress Bar")]
     [SerializeField] private ProgressBar progressBar;
 
-    [Header("Wave Text")]
-    [SerializeField] public TMP_Text startText;
-    [SerializeField] public TMP_Text endText;
-
     [Header("Loser Screen Continue Button")]
     [SerializeField] private Button continueButton;
 

@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
 public abstract class Gun : MonoBehaviour
@@ -55,9 +54,13 @@ public abstract class Gun : MonoBehaviour
     protected bool isReturningToPosition = false;
     protected float returnTimer = 0f;
     protected float returnDelay = 2f;
-
-
     protected float currentHealth;
+    protected AudioManager audioManager;
+
+    protected void Awake()
+    {
+        audioManager = AudioManager.Instance;
+    }
 
     public virtual void Start()
     {
