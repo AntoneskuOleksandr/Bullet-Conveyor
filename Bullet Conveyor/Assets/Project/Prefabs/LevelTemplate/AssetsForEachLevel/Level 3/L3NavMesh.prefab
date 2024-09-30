@@ -10,13 +10,13 @@ PrefabInstance:
     - target: {fileID: 1510243386222618666, guid: 642fd2b5623a48e48b3f34e4b07e3866,
         type: 3}
       propertyPath: m_Name
-      value: NavMesh
+      value: L3NavMesh
       objectReference: {fileID: 0}
     - target: {fileID: 3575432702456036600, guid: 642fd2b5623a48e48b3f34e4b07e3866,
         type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: dd8769c14844aa4459fd0caf87bdb504,
+      objectReference: {fileID: 23800000, guid: 8d119f2273626ab48872f1e7030932b5,
         type: 2}
     - target: {fileID: 8582441263740388656, guid: 642fd2b5623a48e48b3f34e4b07e3866,
         type: 3}

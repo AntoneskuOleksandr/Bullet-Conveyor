@@ -65,7 +65,13 @@ PrefabInstance:
     - target: {fileID: 6147488268951574893, guid: fa906d172a496e0409274ebf19c177f8,
         type: 3}
       propertyPath: m_Name
-      value: L4NavMesh
+      value: L5NavMesh
       objectReference: {fileID: 0}
+    - target: {fileID: 8087144693372489151, guid: fa906d172a496e0409274ebf19c177f8,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: dab33a944d2fd624396e11d879f9fe99,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa906d172a496e0409274ebf19c177f8, type: 3}
