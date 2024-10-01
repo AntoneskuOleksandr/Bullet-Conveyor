@@ -22,8 +22,6 @@ public class Artillery : Gun
             shell.enabled = true;
             shell.GetComponent<Collider>().isTrigger = true;
 
-            shell.AutoDestroy();
-
             Rigidbody shellRb = shell.GetComponent<Rigidbody>();
             shellRb.isKinematic = false;
 

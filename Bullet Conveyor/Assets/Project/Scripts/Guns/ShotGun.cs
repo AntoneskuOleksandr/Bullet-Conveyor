@@ -23,7 +23,6 @@ public class ShotGun : Gun
             {
                 TryGiveEffect(bullet);
 
-                bullet.AutoDestroy();
                 bullet.damage = gunDamage;
 
                 Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();

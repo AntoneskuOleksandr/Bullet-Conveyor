@@ -21,7 +21,7 @@ public abstract class Gun : MonoBehaviour
 
     [Header("Bullet")]
     public GameObject bulletPrefab;
-    public GameObject bulletInAmmo;
+    public GameObject bulletInAmmoGO;
     public Transform firePoint;
     public float yEnemyOffSet = 1.8f;
     public float bulletSpeed = 50f;
@@ -36,6 +36,7 @@ public abstract class Gun : MonoBehaviour
     public Image healthBar;
     public GameObject healthCanvas;
 
+    protected Bullet bulletInAmmo;
     protected StackBullets stackBullets;
     protected AbilityProbabilityManager probabilityManager;
     protected AbilityManager abilityManager;
@@ -122,25 +123,32 @@ public abstract class Gun : MonoBehaviour
 
     public void Update()
     {
-        if (bulletInAmmo == null)
+        if (bulletInAmmoGO == null)
         {
             if (!needBullet)
             {
-                bulletInAmmo = Instantiate(bulletPrefab);
-                bulletInAmmo.GetComponent<Bullet>().speed = bulletSpeed;
-                bulletInAmmo.SetActive(false);
-                bulletInAmmo.isStatic = false;
+                bulletInAmmoGO = Instantiate(bulletPrefab);
+                bulletInAmmo = bulletInAmmoGO.GetComponent<Bullet>();
+
+                bulletInAmmo.speed = bulletSpeed;
+
+                bulletInAmmo.SetOnWaitingState();
+
             }
-            else if (stackBullets.bullets.Count > 0)
+            else if (stackBullets.HaveBullet)
             {
-                bulletInAmmo = stackBullets.bullets[stackBullets.bullets.Count - 1];
-                bulletInAmmo.GetComponent<Bullet>().speed = bulletSpeed;
-                bulletInAmmo.SetActive(false);
+                bulletInAmmoGO = stackBullets.bullets[stackBullets.bullets.Count - 1];
+                bulletInAmmo = bulletInAmmoGO.GetComponent<Bullet>();
+
+                bulletInAmmo.speed = bulletSpeed;
+
+                bulletInAmmo.SetOnWaitingState();
+
                 stackBullets.RemoveBulletFromStack();
             }
         }
 
-        if (target == null || bulletInAmmo == null)
+        if (target == null || bulletInAmmoGO == null)
         {
             returnTimer += Time.deltaTime;
             if (returnTimer >= returnDelay && !isReturningToPosition)
@@ -154,7 +162,7 @@ public abstract class Gun : MonoBehaviour
             returnTimer = 0f;
         }
 
-        if (bulletInAmmo != null)
+        if (bulletInAmmoGO != null)
         {
             LockOnTarget();
 
@@ -167,15 +175,15 @@ public abstract class Gun : MonoBehaviour
             {
                 if (fireCountDown <= 0f)
                 {
-                    bulletInAmmo.SetActive(true);
-
-                    if (bulletInAmmo == null)
+                    if (bulletInAmmoGO == null)
                         Debug.LogError("There is no bullet");
 
-                    Shoot(bulletInAmmo);
+                    bulletInAmmoGO.SetActive(true);
+
+                    Shoot(bulletInAmmoGO);
                     ShowParticles();
 
-                    bulletInAmmo = null;
+                    bulletInAmmoGO = null;
 
                     fireCountDown = 1f / fireRate;
                 }
@@ -187,7 +195,7 @@ public abstract class Gun : MonoBehaviour
 
     public void ShowParticles()
     {
-        bulletColor = bulletInAmmo.GetComponent<Bullet>().trailColor;
+        bulletColor = bulletInAmmo.trailColor;
         GameObject effectIns = Instantiate(firingEffect, firePoint.position, Quaternion.identity);
 
         newMaterial.color = bulletColor;
@@ -209,7 +217,7 @@ public abstract class Gun : MonoBehaviour
     {
         isReturningToPosition = true;
         Quaternion targetRotation = Quaternion.LookRotation(transform.forward);
-        while (Quaternion.Angle(partToRotate.rotation, targetRotation) > 0.01f && (target == null || bulletInAmmo == null))
+        while (Quaternion.Angle(partToRotate.rotation, targetRotation) > 0.01f && (target == null || bulletInAmmoGO == null))
         {
             partToRotate.rotation = Quaternion.Lerp(partToRotate.rotation, targetRotation, Time.deltaTime * turnSpeed);
             yield return null;

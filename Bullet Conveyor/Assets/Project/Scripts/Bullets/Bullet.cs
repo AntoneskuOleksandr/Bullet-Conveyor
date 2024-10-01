@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public abstract class Bullet : MonoBehaviour
@@ -35,10 +36,12 @@ public abstract class Bullet : MonoBehaviour
     public Effect effect = Effect.None;
 
     public TrailRenderer trail;
-
     public Color trailColor;
 
     public float damage;
+
+    public event Action<GameObject> OnBulletHit;
+
 
     private void Start()
     {
@@ -98,10 +101,6 @@ public abstract class Bullet : MonoBehaviour
             enemy.poisonDuration = poisonDuration;
             enemy.poisonDamage = poisonDamage;
         }
-
-        Destroy(gameObject);
-
-        ShowParticles();
     }
 
     public void ShowParticles()
@@ -120,7 +119,7 @@ public abstract class Bullet : MonoBehaviour
         Enemy enemy = enemyTransform.GetComponent<Enemy>();
         if (enemy != null)
             enemy.TakeDamage(damage);
-    }   
+    }
 
     public virtual void OnTriggerEnter(Collider other)
     {
@@ -132,8 +131,14 @@ public abstract class Bullet : MonoBehaviour
                 ShowParticles();
             }
 
-            Destroy(gameObject);
+            OnBulletHit?.Invoke(gameObject);
         }
+    }
+
+    public void SetOnWaitingState()
+    {
+        gameObject.SetActive(false);
+        gameObject.isStatic = false;
     }
 
     public void Explode()
@@ -166,11 +171,6 @@ public abstract class Bullet : MonoBehaviour
             enemy.TakeDamage(damage);
         }
         ShowParticles();
-        Destroy(gameObject);
-    }
-
-    public void AutoDestroy()
-    {
-        Destroy(gameObject, timeToDead);
+        gameObject.SetActive(false);
     }
 }

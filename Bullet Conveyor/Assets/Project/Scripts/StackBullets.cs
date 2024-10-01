@@ -14,6 +14,18 @@ public class StackBullets : MonoBehaviour
 
     public List<GameObject> bullets = new List<GameObject>();
 
+    public bool HaveBullet
+    {
+        get
+        {
+            return bullets.Count > 0;
+        }
+        private set
+        {
+
+        }
+    }
+
     private int currentRow = 0;
     private int currentColumn = 0;
 

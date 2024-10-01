@@ -29,7 +29,6 @@ public class BoosterGun : Gun
         {
             TryGiveEffect(bullet);
 
-            bullet.AutoDestroy();
             bullet.damage = gunDamage;
 
             bulletRb = bulletGO.GetComponent<Rigidbody>();

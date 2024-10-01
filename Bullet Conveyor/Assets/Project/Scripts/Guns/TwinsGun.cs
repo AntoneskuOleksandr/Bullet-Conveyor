@@ -26,7 +26,6 @@ public class TwinsGun : Gun
         {
             TryGiveEffect(bullet);
 
-            bullet.AutoDestroy();
             bullet.damage = gunDamage;
 
             bulletRb = bulletGO.GetComponent<Rigidbody>();

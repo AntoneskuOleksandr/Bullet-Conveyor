@@ -17,7 +17,6 @@ public class MachineGun : Gun
 
         TryGiveEffect(bullet);
 
-        bullet.AutoDestroy();
         bullet.damage = gunDamage;
 
         bulletRb = bulletGO.GetComponent<Rigidbody>();
@@ -29,6 +28,6 @@ public class MachineGun : Gun
 
         bulletRb.velocity = direction.normalized * bulletSpeed;
 
-        audioManager.PlaySFX(audioManager.machineGunShot);
+        //audioManager.PlaySFX(audioManager.machineGunShot);
     }
 }
