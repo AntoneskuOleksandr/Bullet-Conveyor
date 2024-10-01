@@ -120,7 +120,7 @@ public abstract class Bullet : MonoBehaviour
         Enemy enemy = enemyTransform.GetComponent<Enemy>();
         if (enemy != null)
             enemy.TakeDamage(damage);
-    }
+    }   
 
     public virtual void OnTriggerEnter(Collider other)
     {

@@ -19,11 +19,10 @@ public class UIManager : MonoBehaviour
 
     [Header("Screens")]
     [SerializeField] private GameObject inGameScreen;
-    [SerializeField] private GameObject loseScreen;
-    [SerializeField] private GameObject winerScreen;
+    [SerializeField] private GameObject loserScreen;
+    [SerializeField] private GameObject winnerScreen;
     [SerializeField] private GameObject awardTextScreen;
     [SerializeField] private GameObject inGameMenuScreen;
-    [SerializeField] private GameObject settingsScreen;
     [SerializeField] private GameObject abilityScreen;
     [SerializeField] private GameObject tutorialEndScreen;
 
@@ -36,8 +35,6 @@ public class UIManager : MonoBehaviour
     [Header("Buttons")]
     [SerializeField] private Button resumeButton;
     [SerializeField] private Button menuButton;
-    [SerializeField] private Button settingsButton;
-    [SerializeField] private Button SettingsBackButton;
     [SerializeField] private Button multiplyRewardButton;
     [SerializeField] private Button blockForAdButton;
 
@@ -80,8 +77,6 @@ public class UIManager : MonoBehaviour
 
         resumeButton.onClick.AddListener(ResumeGame);
         menuButton.onClick.AddListener(inGameMenu);
-        settingsButton.onClick.AddListener(Settings);
-        SettingsBackButton.onClick.AddListener(ResumeGame);
 
         buyButtonText = buyButton.GetComponentInChildren<TMP_Text>();
 
@@ -144,7 +139,6 @@ public class UIManager : MonoBehaviour
     {
         inGameScreen.SetActive(true);
         inGameMenuScreen.SetActive(false);
-        settingsScreen.SetActive(false);
 
         Time.timeScale = 1f;
     }
@@ -153,7 +147,7 @@ public class UIManager : MonoBehaviour
     {
         inGameScreen.SetActive(false);
         inGameMenuScreen.SetActive(true);
-        winerScreen.SetActive(false);
+        winnerScreen.SetActive(false);
 
         ShowSelectedAbilities();
 
@@ -167,18 +161,12 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene(mainMenuScene);
     }
 
-    public void Settings()
-    {
-        inGameMenuScreen.SetActive(false);
-        settingsScreen.SetActive(true);
-    }
-
     public IEnumerator ShowWinerScreen()
     {
         yield return new WaitForSeconds(3f);
 
         awardTextScreen.SetActive(true);
-        winerScreen.SetActive(true);
+        winnerScreen.SetActive(true);
         inGameScreen.SetActive(false);
 
         Time.timeScale = 0f;
@@ -189,7 +177,7 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 0f;
 
         awardTextScreen.SetActive(true);
-        loseScreen.SetActive(true);
+        loserScreen.SetActive(true);
         inGameScreen.SetActive(false);
         StartCoroutine(DeactivateContinueButton());
     }
@@ -345,7 +333,7 @@ public class UIManager : MonoBehaviour
 
     public void OnContinueButton()
     {
-        loseScreen.SetActive(false);
+        loserScreen.SetActive(false);
         awardTextScreen.SetActive(false);
         inGameScreen.SetActive(true);
 
