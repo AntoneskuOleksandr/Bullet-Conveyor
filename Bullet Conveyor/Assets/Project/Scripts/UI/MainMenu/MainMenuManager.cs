@@ -2,11 +2,12 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class MainMenuManager : MonoBehaviour
 {
     public static MainMenuManager Instance;
-    public GameObject coinsGO; 
+    public GameObject coinsGO;
     public TMP_Text coinsText;
     public float coins;
     public int selectedGunsCount;
@@ -21,9 +22,10 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private Button playButton;
     [SerializeField] private Button giftButton;
     [SerializeField] private Button dailyRewardButton;
-    [SerializeField] private Button spinButton;
     [SerializeField] private Button prevLevelButton;
     [SerializeField] private Button nextLevelButton;
+
+    private List<Button> allButtons = new List<Button>();
 
     [Header("Scripts")]
     [SerializeField] private LevelDisplay levelDisplay;
@@ -31,6 +33,11 @@ public class MainMenuManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        allButtons.Add(playButton);
+        allButtons.Add(giftButton);
+        allButtons.Add(dailyRewardButton);
+        allButtons.Add(prevLevelButton);
+        allButtons.Add(nextLevelButton);
     }
 
     private void Start()
@@ -39,6 +46,7 @@ public class MainMenuManager : MonoBehaviour
         selectedGunsCount = PlayerPrefs.GetInt("SelectedGunsCount");
 
         UpdateCoinsText();
+        BindSounds();
     }
 
     public void AddCoins(float amount, int multiplier = 1)
@@ -64,15 +72,10 @@ public class MainMenuManager : MonoBehaviour
 
     public void ShowOrHideWheelScrene(bool openWheelScreen)
     {
-        dailyRewardButton.gameObject.SetActive(!openWheelScreen);
-        giftButton.gameObject.SetActive(!openWheelScreen);
-        playButton.gameObject.SetActive(!openWheelScreen);
-        prevLevelButton.gameObject.SetActive(!openWheelScreen);
-        nextLevelButton.gameObject.SetActive(!openWheelScreen);
-        levelsParent.gameObject.SetActive(!openWheelScreen);
+        foreach (Button button in allButtons)
+            button.gameObject.SetActive(!openWheelScreen);
 
         wheelScreen.SetActive(openWheelScreen);
-        spinButton.gameObject.SetActive(openWheelScreen);
     }
 
     private void UpdateCoinsText()
@@ -92,5 +95,17 @@ public class MainMenuManager : MonoBehaviour
         PlayerPrefs.SetInt("SelectedGunsCount", selectedGunsCount);
 
         levelDisplay.UpdateCurrentLevelState();
+    }
+
+    private void BindSounds()
+    {
+        AudioManager audioManager = AudioManager.Instance;
+        UnityAction playSound = () => audioManager.PlaySFX(audioManager.buttonClickSound);
+
+        Button[] buttons = FindObjectsOfType<Button>(true);
+        foreach (Button button in buttons)
+        {
+            button.onClick.AddListener(playSound);
+        }
     }
 }

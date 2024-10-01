@@ -73,8 +73,6 @@ public class GameManager : MonoBehaviour
 
         AbilityManager.Instance.OnBulletToGenerateAbilitySelected.AddListener(IncreaseAdditionBulletsCount);
 
-        //GAManager.instance.OnLevelStart(currentLevel);
-
         if (isTutorial)
             onBlockBuy.AddListener(ChangeAbilityToPutBlock);
     }

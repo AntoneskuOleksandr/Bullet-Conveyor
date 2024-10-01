@@ -1703,7 +1703,6 @@ MonoBehaviour:
   playButton: {fileID: 1966665458}
   giftButton: {fileID: 778855847}
   dailyRewardButton: {fileID: 1144729119}
-  spinButton: {fileID: 211584091}
   prevLevelButton: {fileID: 1604096024}
   nextLevelButton: {fileID: 1229194667}
   levelDisplay: {fileID: 1681335559}

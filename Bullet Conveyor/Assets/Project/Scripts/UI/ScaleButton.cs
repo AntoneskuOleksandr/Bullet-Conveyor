@@ -4,13 +4,14 @@ using UnityEngine.EventSystems;
 using DG.Tweening;
 
 [RequireComponent(typeof(Button))]
-public class ScaleButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+public class ScaleButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private float scaleFactor = 0.9f;
     [SerializeField] private float animationDuration = 0.1f;
 
     private Vector3 originalScale;
     private Button button;
+    private bool isPointerOverButton = false;
 
     private void Awake()
     {
@@ -25,11 +26,24 @@ public class ScaleButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (button != null && button.interactable)
+        if (button != null && button.interactable && isPointerOverButton)
             transform.DOScale(originalScale * scaleFactor, animationDuration);
     }
+
     public void OnPointerUp(PointerEventData eventData)
     {
+        if (button != null)
+            transform.DOScale(originalScale, animationDuration);
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        isPointerOverButton = true;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        isPointerOverButton = false;
         if (button != null)
             transform.DOScale(originalScale, animationDuration);
     }

@@ -12,6 +12,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip MainMenuMusic;
     public AudioClip InGameMusic;
     public AudioClip machineGunShot;
+    public AudioClip buttonClickSound;
 
     private void Awake()
     {
