@@ -232,7 +232,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 901573837}
   SFXSource: {fileID: 2072451755}
-  background: {fileID: 8300000, guid: 60d697d1aaa40924f92a9abb06c83cbb, type: 3}
+  MainMenuMusic: {fileID: 8300000, guid: 60d697d1aaa40924f92a9abb06c83cbb, type: 3}
+  InGameMusic: {fileID: 8300000, guid: 84b2a1e7b60b37a429700b1887798929, type: 3}
   machineGunShot: {fileID: 8300000, guid: 0c51d1d45067e1a489ea27cd17df3f00, type: 3}
 --- !u!4 &539862766
 Transform:
@@ -412,7 +413,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

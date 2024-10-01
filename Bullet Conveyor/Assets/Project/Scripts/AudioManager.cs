@@ -9,7 +9,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource SFXSource;
 
     [Header("Audio Clip")]
-    public AudioClip background;
+    public AudioClip MainMenuMusic;
+    public AudioClip InGameMusic;
     public AudioClip machineGunShot;
 
     private void Awake()
@@ -20,12 +21,18 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        musicSource.clip = background;
+        musicSource.clip = MainMenuMusic;
         musicSource.Play();
     }
 
     public void PlaySFX(AudioClip clip)
     {
         SFXSource.PlayOneShot(clip);
+    }
+
+    public void PlayMusic(AudioClip clip)
+    {
+        musicSource.clip = clip;
+        musicSource.Play();
     }
 }

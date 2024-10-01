@@ -68,6 +68,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        AudioManager.Instance.PlayMusic(AudioManager.Instance.InGameMusic);
         CreateBlock();
 
         AbilityManager.Instance.OnBulletToGenerateAbilitySelected.AddListener(IncreaseAdditionBulletsCount);
