@@ -42,6 +42,7 @@ public class MainMenuManager : MonoBehaviour
 
     private void Start()
     {
+        AudioManager.Instance.PlayMusic(AudioManager.Instance.MainMenuMusic);
         coins = PlayerPrefs.GetFloat("Coins");
         selectedGunsCount = PlayerPrefs.GetInt("SelectedGunsCount");
 

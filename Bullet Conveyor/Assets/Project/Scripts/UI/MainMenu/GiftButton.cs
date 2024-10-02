@@ -1,8 +1,8 @@
 using System;
 using UnityEngine;
-using System.Collections;
 using TMPro;
 using UnityEngine.UI;
+using System.Collections;
 
 public class GiftButton : MonoBehaviour
 {
@@ -25,18 +25,29 @@ public class GiftButton : MonoBehaviour
 
         bool isButtonInteractable = PlayerPrefs.GetInt("IsButtonInteractable", 1) > 0;
         giftButton.interactable = isButtonInteractable;
+
+        StartCoroutine(GiftStateUpdater());
     }
 
-    private void Update()
+    private IEnumerator GiftStateUpdater()
     {
-        DateTime serverTime = ServerTimeManager.Instance.ServerTime;
+        while (true)
+        {
+            UpdateGiftState();
+            yield return new WaitForSeconds(1);
+        }
+    }
 
-        if (serverTime >= nextGiftTime)
+    private void UpdateGiftState()
+    {
+        DateTime localTime = DateTime.Now;
+
+        if (localTime >= nextGiftTime)
         {
             giftButton.interactable = true;
         }
 
-        TimeSpan timeToGift = nextGiftTime - serverTime;
+        TimeSpan timeToGift = nextGiftTime - localTime;
         if (timeToGift.TotalSeconds > 0)
         {
             timerText.text = string.Format("{0:D2}:{1:D2}:{2:D2}", timeToGift.Hours, timeToGift.Minutes, timeToGift.Seconds);
@@ -55,7 +66,7 @@ public class GiftButton : MonoBehaviour
 
         PlayerPrefs.SetInt("IsButtonInteractable", 0);
 
-        nextGiftTime = ServerTimeManager.Instance.ServerTime.AddMinutes(giftIntervalMinutes);
+        nextGiftTime = DateTime.Now.AddMinutes(giftIntervalMinutes);
         PlayerPrefs.SetString("NextGiftTime", nextGiftTime.ToString());
     }
 }

@@ -74,7 +74,7 @@ public class DailyRewards : MonoBehaviour
 
         if (lastClaimTime.HasValue)
         {
-            var timeSpan = ServerTimeManager.Instance.ServerTime - lastClaimTime.Value;
+            var timeSpan = DateTime.Now - lastClaimTime.Value;
 
             if (timeSpan.TotalHours > claimDeadline)
             {
@@ -97,7 +97,7 @@ public class DailyRewards : MonoBehaviour
         else
         {
             var nextClaimTime = lastClaimTime.Value.AddHours(claimCooldown);
-            var currentClaimCooldown = nextClaimTime - ServerTimeManager.Instance.ServerTime;
+            var currentClaimCooldown = nextClaimTime - DateTime.Now;
 
             string cd = $"{currentClaimCooldown.Hours:D2}:{currentClaimCooldown.Minutes:D2}:{currentClaimCooldown.Seconds:D2}";
 
@@ -120,7 +120,7 @@ public class DailyRewards : MonoBehaviour
 
         CoinMove.Instance.CountCoins(reward.value, rewardsGrid.GetChild(currentStreak).transform);
 
-        lastClaimTime = ServerTimeManager.Instance.ServerTime;
+        lastClaimTime = DateTime.Now;
         currentStreak = (currentStreak + 1) % maxStpeakCount;
 
         UpdateRewardState();

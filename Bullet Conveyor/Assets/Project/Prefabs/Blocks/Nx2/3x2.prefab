@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DraggSpeed: 7
+  bulletsCount: {fileID: 0}
   scaleX: 3
   scaleZ: 2
   desiredPosition: {x: 0, y: 0, z: 0}

@@ -37,32 +37,39 @@ public class WheelOfFortune : MonoBehaviour
 
         string nextWheelTimeStr = PlayerPrefs.GetString("NextWheelTime", string.Empty);
         if (!string.IsNullOrEmpty(nextWheelTimeStr))
-        {
             nextWheelTime = DateTime.Parse(nextWheelTimeStr);
-        }
 
         for (int i = 0; i < gifts.Length; i++)
         {
-            giftsText[i] = gifts[i].ToString() + "$";
-            giftsValueText[i].text = gifts[i].ToString() + "$";
+            giftsText[i] = gifts[i].ToString();
+            giftsValueText[i].text = gifts[i].ToString();
         }
-
-
 
         bool isButtonInteractable = PlayerPrefs.GetInt("IsButtonInteractable", 1) > 0;
         wheelButton.interactable = isButtonInteractable;
+
+        StartCoroutine(WheelStateUpdater());
     }
 
-    private void Update()
+    private IEnumerator WheelStateUpdater()
     {
-        DateTime serverTime = ServerTimeManager.Instance.ServerTime;
+        while (true)
+        {
+            UpdateWheelState();
+            yield return new WaitForSeconds(1);
+        }
+    }
 
-        if (serverTime >= nextWheelTime)
+    private void UpdateWheelState()
+    {
+        DateTime localTime = DateTime.Now;
+
+        if (localTime >= nextWheelTime)
         {
             wheelButton.interactable = true;
         }
 
-        TimeSpan timeToWheel = nextWheelTime - serverTime;
+        TimeSpan timeToWheel = nextWheelTime - localTime;
         if (timeToWheel.TotalSeconds > 0)
         {
             wheelButton.interactable = false;
@@ -84,7 +91,7 @@ public class WheelOfFortune : MonoBehaviour
         spinButton.gameObject.SetActive(false);
 
         PlayerPrefs.SetInt("IsButtonInteractable", 0);
-        nextWheelTime = ServerTimeManager.Instance.ServerTime.AddMinutes(wheelIntervalMinutes);
+        nextWheelTime = DateTime.Now.AddMinutes(wheelIntervalMinutes);
         PlayerPrefs.SetString("NextWheelTime", nextWheelTime.ToString());
 
         float startAngle = wheel.transform.eulerAngles.z;
@@ -113,9 +120,11 @@ public class WheelOfFortune : MonoBehaviour
         giftText.text = "";
         CoinMove.Instance.CountCoins(gifts[indexGiftRandom], this.transform);
     }
+
     public void ChangeWheelScreenState()
     {
         isWheelScreen = !isWheelScreen;
         menuManager.ShowOrHideWheelScrene(isWheelScreen);
     }
+
 }
