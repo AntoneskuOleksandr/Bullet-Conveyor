@@ -525,8 +525,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e725202e7893f4880eaa42e8a08a80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coins: 100000
-  currentLevel: 8
+  coins: 100
+  currentLevel: 1
   guns:
   - {fileID: 11400000, guid: 4c71e8266a7b3cf47bfe30c6f9d36db3, type: 2}
   - {fileID: 11400000, guid: c96246c9851e06948bed21edf3e5d683, type: 2}

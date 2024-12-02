@@ -240,6 +240,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3399686697760721830, guid: 233cafdc6c46e2f41aba5c5597f1394f,
         type: 3}
+      propertyPath: newEnemyPrefab
+      value: 
+      objectReference: {fileID: 4850011443788842758, guid: 9537295d0d72cfd4e88a458b6cc448cd,
+        type: 3}
+    - target: {fileID: 3399686697760721830, guid: 233cafdc6c46e2f41aba5c5597f1394f,
+        type: 3}
       propertyPath: delayBeforeWave
       value: 2.3
       objectReference: {fileID: 0}

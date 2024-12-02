@@ -19,6 +19,7 @@ public class DefaultSettings : MonoBehaviour
 
     private void Awake()
     {
+        Application.targetFrameRate = 60;
         if (!PlayerPrefs.HasKey("SetStartValues"))
         {
             PlayerPrefs.SetInt("SetStartValues", 1);
